@@ -3,7 +3,7 @@ const webpack = require("./webpack.config.js");
 
 
 mix
-.js('./Scripts/Application.js', './Output/Scripts')
+.js('./Scripts/Application.js', './Output/Scripts').vue({ version: 2 })
 .sass('./Styles/Application.scss', './Output/Styles')
 .options({
     processCssUrls: false,
