@@ -1,11 +1,9 @@
 import Vue from "vue";
 import Router from "vue-router";
 import PublicLayout from "@scripts/Layouts/PublicLayout.vue";
-
-
+import Login from "@scripts/Pages/Login.vue";
 
 Vue.use(Router);
-
 
 let router = new Router({
     mode: "history",
@@ -13,7 +11,7 @@ let router = new Router({
         {
             path: "/", name: "public-layout", component:PublicLayout,
             children: [
-                //others route
+                { path: "login", name:"login", component:Login }
             ]
         }
     ]
